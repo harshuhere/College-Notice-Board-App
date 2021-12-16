@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.Admin_Profile_info"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/txtm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Profile info"
+        android:textColor="#FF4B9A88"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/txts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtm"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="Provide your name and profile photo"
+        android:textSize="15dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/approfileimage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/txts"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/userphoto"
+        app:civ_border_color="#ff000000"
+        app:civ_border_width="1dp" />
+    />
+
+    <EditText
+    android:id="@+id/apedtname"
+    android:layout_width="330dp"
+    android:layout_height="50dp"
+    android:layout_marginLeft="5dp"
+    android:layout_weight="2"
+    android:layout_below="@id/approfileimage"
+    android:background="@drawable/edtborder"
+    android:layout_centerHorizontal="true"
+    android:paddingLeft="15dp"
+    android:inputType="text"
+    android:hint="Enter your name"
+    android:layout_marginTop="20dp"
+    android:textColor="#ff070707" />
+
+    <EditText
+        android:id="@+id/apedtemail"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="2"
+        android:layout_below="@id/apedtname"
+        android:background="@drawable/edtborder"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="15dp"
+        android:inputType="text"
+        android:hint="Enter your email"
+        android:layout_marginTop="10dp"
+        android:textColor="#ff070707" />
+
+    <Button
+        android:id="@+id/apbtnnext"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/apedtemail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_signin_buttong"
+        android:text="Next"
+        android:textSize="20dp"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

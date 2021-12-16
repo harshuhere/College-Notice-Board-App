@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Admin.Add_Student">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add student"
+        android:fontFamily="monospace"
+        android:textSize="40dp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#ff070707"
+        android:layout_margin="20dp"
+        />
+
+    <EditText
+        android:id="@+id/studententername"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/border"
+        android:hint="Enter Full Name"
+        android:inputType="text"
+        android:textColor="#ff070707"
+        android:textSize="20dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/studententerdepartment"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/border"
+        android:hint="  Enter Department"
+        android:inputType="text"
+        android:paddingLeft="7dp"
+        android:textColor="#ff070707"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/studententernumber"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/border"
+        android:hint="Enter number"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:maxLength="10"
+        android:textColor="#ff070707"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/studententeremail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/border"
+        android:hint="Enter email"
+        android:inputType="textEmailAddress"
+        android:textColor="#ff070707"
+        android:textSize="20dp" />
+
+
+
+    <Button
+        android:id="@+id/studentbtnaddstudent"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_signin_buttong"
+        android:text="Add student"
+        android:textColor="#ffffff" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/adminhome"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/adminaddnotice"
+        android:icon="@drawable/ic_note_add_black_24dp"
+        android:title="Add Notice" />
+
+
+
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="People">
+
+            <menu>
+                <item
+                    android:id="@+id/maganestaff"
+                    android:icon="@drawable/ic_staff"
+                    android:title="Manage Staff"
+
+                    />
+
+                <item
+                    android:id="@+id/managestudent"
+                    android:icon="@drawable/studnt"
+                    android:title="Manage Student" />
+
+            </menu>
+
+        </item>
+
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:title="Controlls">
+            <menu>
+
+                <item
+                    android:id="@+id/adminlogout"
+                    android:title="Log out"
+                    android:icon="@drawable/ic_power_settings_new_black_24dp"/>
+
+                <item
+                    android:id="@+id/adminsetting"
+                    android:icon="@drawable/ic_settings_black_24dp"
+                    android:title="Settings" />
+
+
+            </menu>
+
+
+        </item>
+
+    </group>
+
+
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Communicate">
+
+            <menu>
+
+                <item
+                    android:id="@+id/rateus"
+                    android:icon="@drawable/ic_star_black_24dp"
+                    android:title="Rate us" />
+
+                <item
+                    android:id="@+id/admincontactus"
+                    android:icon="@drawable/ic_help_black_24dp"
+                    android:title="Contact Us" />
+
+                <item
+                    android:id="@+id/shareapp"
+                    android:title="Share App"
+                    android:icon="@drawable/ic_share_black_24dp"
+                    />
+
+            </menu>
+
+        </item>
+
+    </group>
+
+
+</menu>

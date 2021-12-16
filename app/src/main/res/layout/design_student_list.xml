@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/studentcardview"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_margin="10dp"
+        android:outlineSpotShadowColor="#ff070707"
+        app:cardCornerRadius="10dp"
+        app:contentPaddingBottom="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:background="#ff070707"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/studentname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:padding="5dp"
+                    android:text="Name"
+                    android:textStyle="bold"
+                    android:textColor="#ff070707"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/studentdepartment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:padding="5dp"
+                    android:text="Department"
+                    android:textColor="#ff070707"
+                    android:textSize="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/studentnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:padding="5dp"
+                    android:text="Contact Number"
+                    android:textColor="#ff070707"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/studentemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:padding="5dp"
+                    android:text="Email"
+                    android:textColor="#ff070707"
+                    android:textSize="15dp" />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sstxtoption"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:text="&#8942;"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:textAppearance="?android:textAppearanceLarge" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

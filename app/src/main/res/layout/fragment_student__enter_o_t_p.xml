@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Student.Student_EnterOTP">
+
+    <TextView
+        android:id="@+id/txtm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Admin SignIn"
+        android:textColor="#FF4B9A88"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/stextView1"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtm"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:text="Code will be detected automatically but if it is not detected you can put it below manually as well."
+        android:textAlignment="center"
+        android:textColor="#ff070707" />
+
+
+    <EditText
+        android:id="@+id/sotpedtenterotp"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/stextView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edtborder"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        android:hint=" Enter OTP"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:textColor="#FF4B9A88" />
+
+
+    <Button
+        android:id="@+id/sotpbtnsignin"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/sotpedtenterotp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_signin_buttong"
+        android:text="Verify"
+        android:textColor="#ffffff" />
+
+    <ProgressBar
+        android:id="@+id/sotpprogressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sotpbtnsignin"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
